@@ -1,0 +1,15 @@
+TestNg Listener:
+TestNg Listeners are Interfaces that allows you to listen to specific events in
+ a test lifecycyle(Eg: test start, Test success, Test Failure).
+
+ Purpose of TestNg Listeners:
+ 1. Track test execution status (Test start, pass, fail skip).
+ 2. Perform actions such as logging, taking Screenshots, or sending notifications.
+ 3. Enhance reporting capabilities.
+
+ Types of TestNg Listeners"
+ 1.ITestListeners: Tracks test execution lifecycle events.
+ 2.ISuiteListeners: Track test suite execution events.
+ 3.IAnnotationTransformer: Modifies the test annotation dynamically.
+ 4.IExecutionListener: Executes custom logic before and after the entire testNg execution.
+
