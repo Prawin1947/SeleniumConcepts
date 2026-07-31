@@ -34,6 +34,9 @@ public class NavigateMethods  extends BaseTest{
         driver.navigate().to("https://www.tutorialspoint.com/selenium/practice/text-box.php");
         Thread.sleep(2000);
 
+        driver.navigate().refresh();
+        Thread.sleep(1000);
+
         //   navigate back
         driver.navigate().back();
         Thread.sleep(2000);

@@ -10,7 +10,8 @@ import java.time.Duration;
 
 /**
  *
- * The StaleElementReferenceException in Selenium Java occurs when the referenced web element is no longer attached to the page's Document Object Model (DOM).
+ * The StaleElementReferenceException in Selenium Java occurs when the referenced web element is no longer attached
+ * to the page's Document Object Model (DOM).
  * This typically happens after a page refresh, dynamic DOM updates via JavaScript/AJAX, or navigation.
  *
  * ways to handle StaleElementReferenceException exception:

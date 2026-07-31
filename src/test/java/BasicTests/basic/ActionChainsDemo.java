@@ -37,7 +37,6 @@ public class ActionChainsDemo extends BaseTest{
         driver.findElement(By.xpath("//a[@href='links.php']")).click();
         Thread.sleep(2000);
 
-
         WebElement element = driver.findElement(By.xpath("//a[@href='https://www.tutorialspoint.com/index.htm']"));
         Actions actions = new Actions(driver);
         //Right click/ Context click
@@ -48,5 +47,10 @@ public class ActionChainsDemo extends BaseTest{
                .sendKeys(Keys.ENTER).build().perform();
         Thread.sleep(3000);
     }
+
+    //mouse hover
+    //actions.moveToElement(element).perform();
+
+
 
 }

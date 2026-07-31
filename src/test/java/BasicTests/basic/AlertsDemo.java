@@ -11,6 +11,14 @@ import org.testng.annotations.Test;
 import java.time.Duration;
 import java.util.List;
 
+/**
+ * Note:
+ * How to confirms its a alert / not by looking at a dom ?
+ *
+ * ---> “Browser alerts are not part of the DOM, so we cannot inspect or verify them using DOM elements.
+ *       We must use switchTo().alert() or ExpectedConditions.alertIsPresent().”
+ */
+
 public class AlertsDemo extends BaseTest{
 
 
@@ -19,7 +27,6 @@ public class AlertsDemo extends BaseTest{
         String url = "https://www.tutorialspoint.com/selenium/practice/alerts.php";
         driver.get(url);
         Thread.sleep(2000);
-
 
         driver.findElement(By.xpath("//div[@class='d-flex justify-content-between']//button")).click();
 

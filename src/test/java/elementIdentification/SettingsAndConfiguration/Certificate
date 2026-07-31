@@ -1,0 +1,17 @@
+How to add a certificate?
+
+Error:: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: Unable to find valid certification path to requested
+target and 'parent.relativePath' points at wrong local POM POM @line 37, column 13
+
+Solution:
+
+Step-1: Download the certificate
+ --> Open the nexus URL
+ --> clisk on 'View Site Information' (click on lock icon in the url tab)
+ --> click on 'Connection is Secure' (Connection is Secure popup will open)
+ --> click on certificate icon in the popup(its next to the popUp title) [Certificate viewer page will open]
+ --> Click on details tab
+ --> select the certificate from 'Certificate Hierarchy' and click export
+
+
+Steps-2: Add the certificate to

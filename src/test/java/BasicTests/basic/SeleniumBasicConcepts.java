@@ -19,7 +19,7 @@ public class SeleniumBasicConcepts extends BaseTest{
     }
 
 
-    //Open the URL using get method
+    //get current url
     @Test
     public void getCurrentUrl()throws Exception{
         String url = "https://www.tutorialspoint.com/selenium/practice/text-box.php";
@@ -43,7 +43,6 @@ public class SeleniumBasicConcepts extends BaseTest{
       String title =  driver.getTitle();
         System.out.println("Session Id : "+title);
     }
-
 
     //get ssionId
     @Test
@@ -106,7 +105,7 @@ public class SeleniumBasicConcepts extends BaseTest{
 
     }
 
-    //getTagName() : When we want to verify css value
+    //getCssValue("<css attribute>") : When we want to verify css value
     @Test
     public void getCssValue()throws Exception {
         String url = "https://www.tutorialspoint.com/selenium/practice/links.php";
@@ -193,6 +192,5 @@ public class SeleniumBasicConcepts extends BaseTest{
 
         List<WebElement> element = driver.findElements(By.cssSelector("#created"));
     }
-
 
 }

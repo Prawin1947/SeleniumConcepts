@@ -95,7 +95,7 @@ public class ExceptionInAutomationWithExample extends BaseTest{
     /**
      * NoAlertPresentException:
      * org.openqa.selenium.NoAlertPresentException: no such alert
-     * In this case the before occureing the alert The we are tying to switch to the alert.
+     * In this case the before occureing the alert The we are trying to switch to the alert.
      * In line 107 we are trying to switch to the aleret before it occuring. After executing 113 only the alert will be available.
      */
     @Test

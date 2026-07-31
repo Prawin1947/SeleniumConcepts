@@ -46,7 +46,7 @@ public class BrowserWindows extends BaseTest{
            Assert.assertEquals(oldURL,"https://www.tutorialspoint.com/selenium/practice/browser-windows.php");
        }
 
-       //NoSuchWindowException: Without using the last line of code, it will throw the 'NoSuchWindowException',
+        //NoSuchWindowException: Without using the last line of code, it will throw the 'NoSuchWindowException',
         // Because the current window is closed. In AfterMethod we are trying to close the same window,
         // to avoid 'NoSuchWindowException' after closing the new window, come back to parent window.
         driver.switchTo().window(newId);

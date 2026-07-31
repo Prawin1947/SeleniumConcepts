@@ -7,6 +7,16 @@ import org.openqa.selenium.WebElement;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+/**
+ * Shadow DOM is a web technology used to encapsulate HTML, CSS, and JavaScript inside a component
+ * so that it is hidden from the main DOM (Document Object Model).
+ *
+ * 👉 In simple words:
+ * It creates a separate, isolated DOM tree attached to an element.
+ *
+ */
+
+
 public class ShadowDom extends BaseTest {
 
     @BeforeMethod

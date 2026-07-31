@@ -52,10 +52,6 @@ public class ChromeOptionsDemo {
         chromeOptions.merge(desiredCapabilities);
 
 
-
-
-
-
         return chromeOptions;
     }
 

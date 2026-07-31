@@ -15,6 +15,11 @@ import java.util.List;
 public class Frames extends BaseTest {
 
     /**
+     *
+     * “In Selenium, frames are HTML elements that contain another webpage.
+     * Since each frame has its own DOM, we must switch to it using driver.switchTo().frame() before interacting with elements inside it,
+     * and switch back using defaultContent().”
+     *
      * We can switch to frame in three different ways
      *
      * // By passing the index of the frame and the index starts from '0'
@@ -42,14 +47,14 @@ public class Frames extends BaseTest {
 
         List<WebElement> frames = driver.findElements(By.tagName("iframe"));
 
-        //Switch to frame by index
-       driver.switchTo().frame(0);
+       //Switch to frame by index
+       driver =  driver.switchTo().frame(0);
        String placeHolder = driver.findElement(By.xpath("//a[@href='/selenium/index.htm']")).getText();
        Assert.assertEquals(placeHolder,"Selenium Tutorial");
        driver.findElement(By.xpath("//a[@href='https://www.tutorialspoint.com']")).click();
 
        //Switch to parent frame
-       // driver.switchTo().parentFrame();
+        //driver.switchTo().parentFrame();
         driver.switchTo().defaultContent();
 
         //Switch to frame by WebElement
